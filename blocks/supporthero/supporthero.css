@@ -1,0 +1,34 @@
+.supporthero-container>div {
+    max-width: unset;
+}
+
+.supporthero-container {
+    padding: 0;
+}
+
+.supporthero {
+    position: relative;
+    padding: 32px;
+    min-height: 300px;
+}
+
+.supporthero h1 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.supporthero picture {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.supporthero img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

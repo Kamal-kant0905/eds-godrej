@@ -1,0 +1,510 @@
+.applynowform .field-wrapper {
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    padding: 8px;
+}
+
+.applynowform fieldset {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 8px;
+    border: none;
+    padding: 0;
+}
+
+@media (width >=900px) {
+    .applynowform fieldset {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+}
+
+.applynowform fieldset>legend {
+    font-weight: 700;
+    font-size: var(--heading-font-size-xs);
+}
+
+.applynowform label {
+    font-weight: 700;
+    font-size: var(--body-font-size-xs);
+    margin-bottom: 0.25em;
+}
+
+.applynowform input,
+.applynowform select,
+.applynowform textarea {
+    font-size: var(--body-font-size-s);
+    width: 100%;
+    max-width: 50rem;
+    display: block;
+    padding: 12px 8px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.applynowform textarea {
+    resize: vertical;
+}
+
+.applynowform .selection-wrapper input {
+    width: 16px;
+}
+
+.applynowform .selection-wrapper label {
+    margin-bottom: 0;
+}
+
+.applynowform input:hover {
+    border: 1px solid var(--text-color);
+}
+
+.applynowform .button {
+    max-width: 225px;
+    font-size: var(--body-font-size-m);
+    padding: 0.2em 0.4em;
+}
+
+.applynowform .field-wrapper.selection-wrapper {
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 16px;
+}
+
+.applynowform .field-wrapper>label {
+    order: -1;
+}
+
+.applynowform .field-wrapper.selection-wrapper>label {
+    order: 1;
+}
+
+.applynowform input[required]+label::after {
+    content: "*";
+    color: firebrick;
+    margin-inline-start: 1ch;
+}
+
+.applynowform .toggle-wrapper .switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+
+.applynowform .toggle-wrapper input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.applynowform .toggle-wrapper .slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: var(--dark-color);
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.applynowform .toggle-wrapper .slider::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--background-color);
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.applynowform .toggle-wrapper input:checked+.slider {
+    background-color: var(--link-color);
+}
+
+.applynowform .toggle-wrapper input:focus+.slider {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+}
+
+.applynowform .toggle-wrapper input:checked+.slider::before {
+    transform: translateX(24px);
+}
+
+
+
+/* custom css */
+.section.applynowform-container {
+    background-color: #f2f2f2;
+}
+
+.radio-wrapper input[type="checkbox"] {
+    display: none;
+}
+
+/* Style labels */
+.radio-wrapper label {
+    padding: 10px;
+    background: #ffffff;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+/* Active class styling */
+.radio-wrapper.active label {
+    background: green;
+}
+
+
+#applynowform-box {
+    display: flex;
+}
+
+/* fieldset#form-box {} */
+
+/* .form-container .form .verify-step {
+    display: none !important;
+} */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.applynowform .selection-wrapper label {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.applynowform .selection-wrapper.checked label {
+    background-color: #8CB133;
+}
+
+.applynowform .field-wrapper.field-wrapper #form-tems {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+
+.applynowform-container {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.applynowform-container h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #696969;
+    line-height: 38px;
+}
+
+.applynowform-container .applynowform .step1.field-wrapper input[type="text"],
+.applynowform-container .applynowform .step1.field-wrapper input[type="tel"],
+.applynowform-container .applynowform .step1.field-wrapper input[type="email"] {
+    background-color: #D4D4D499;
+    border-radius: 4px;
+    height: 50px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 18px;
+    border: none;
+}
+
+.applynowform-container .applynowform .step1.field-wrapper fieldset #loanTypeFieldset {
+    padding-top: 40px;
+    border: none;
+    border-top: 1px solid #9A9A9A;
+}
+
+.applynowform-container .applynowform .step1.field-wrapper #loanTypeFieldset legend {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 18px;
+    color: #585858;
+}
+
+.applynowform-container input[type="checkbox"] {
+    display: none;
+}
+
+
+.applynowform-container .loan-type-checkbox.field-wrapper.checkbox-wrapper.selection-wrapper label {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 14px;
+    color: #3B3B3B;
+
+}
+
+.applynowform-container .loan-type-checkbox.field-wrapper.checkbox-wrapper.selection-wrapper.checked label {
+    background-color: #8CB133;
+    padding: 10px;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.applynowform-container .applynowform .step1.submit-registration button,
+.applynowform-container .applynowform .verify-step.btn-verify-step button {
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 1rem;
+    background-color: #3CB8FF;
+    line-height: 1rem;
+    padding: 17px 50px;
+    border-radius: 4px;
+    gap: 10px;
+    width: 100%;
+    max-width: 160px;
+}
+
+.applynowform-container .applynowform #form-common legend,
+.applynowform-container .applynowform .verify-step.field-wrapper.plaintext-wrapper #form-message {
+    color: #3B3B3B;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.applynowform-container .applynowform .verify-step.field-wrapper.plaintext-wrapper #change-number {
+    font-size: 14px;
+    font-weight: 400;
+    color: #3CB8FF;
+    line-height: 16px;
+}
+
+.applynowform-container .applynowform .verify-step.field-wrapper.fieldset-wrapper #form-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.applynowform-container .applynowform .verify-step.field-wrapper.fieldset-wrapper #form-resendcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.applynowform-container .applynowform .verify-step.field-wrapper.fieldset-wrapper #form-resendcontainer #form-message3 {
+    font-size: 14px;
+    line-height: 16px;
+    color: #B8B8B8;
+    font-weight: 400;
+}
+
+.applynowform-container .applynowform .verify-step.field-wrapper.fieldset-wrapper #form-description-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.applynowform-container .applynowform .verify-step.field-wrapper.fieldset-wrapper #form-description-1 #form-message4 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #3B3B3B;
+}
+
+.applynowform-container .applynowform .verify-step.field-wrapper.fieldset-wrapper #form-description-1 #form-message5 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5CB7E3;
+}
+
+.submit-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* input {
+    background-color: #D4D4D499;
+} */
+
+
+
+
+.error-message {
+    color: red;
+}
+
+
+
+
+
+.selection-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.verify-step {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.verify-step .field-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.verify-step .plaintext-wrapper {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-verify-step {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.plainText-wrapper p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.termsandcondition {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .loan-type-checkbox {
+        flex-direction: column;
+    }
+
+    .verify-step {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-container legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.field-wrapper {
+    margin-bottom: 15px;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.otp-input {
+    display: inline-block;
+    width: 40px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+#form-message {
+    font-size: 0.9em;
+    color: #555;
+}
+
+#change-number,
+#form-message2,
+#form-message3 {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+#form-message2 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btn-verify-step {
+    margin-top: 20px;
+}
+
+.btn-verify-step button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-verify-step button:hover {
+    background-color: #0056b3;
+}
+
+#form-message4 {
+    font-size: 0.8em;
+    color: #777;
+}
+
+#form-message5 {
+    font-size: 0.8em;
+    color: #007BFF;
+    cursor: pointer;
+} */

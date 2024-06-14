@@ -1,0 +1,113 @@
+.fragment-and-card-parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.fragment-and-card-parent .fragment-wrapper>.section {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.fragment-and-card-parent .fragment-wrapper>.section:first-of-type {
+    padding-top: 0;
+}
+
+.fragment-and-card-parent .fragment-wrapper>.section:last-of-type {
+    padding-bottom: 0;
+}
+
+
+
+
+
+.fragment-and-card-parent .columns>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.fragment-and-card-parent .columns img {
+    width: 100%;
+}
+
+.fragment-and-card-parent .columns>div>div {
+    order: 1;
+}
+
+.fragment-and-card-parent .columns>div>.columns-img-col {
+    order: 0;
+}
+
+.fragment-and-card-parent .columns>div>.columns-img-col img {
+    display: block;
+}
+
+@media (width >=900px) {
+    .fragment-and-card-parent .columns>div {
+        align-items: center;
+        flex-direction: unset;
+        gap: 32px;
+    }
+
+    .fragment-and-card-parent .columns>div>div {
+        flex: 1;
+        order: unset;
+    }
+}
+
+
+
+.fragment-and-card-parent .columns.contact-us div div p picture img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+
+.supportcontactsinfo-container .default-content-wrapper {
+    padding: 27.5px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 8px 0px #0000001A;
+    border-radius: 4px;
+}
+
+.default-content-wrapper h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    line-height: 18.77px;
+    color: #000000;
+
+}
+
+.default-content-wrapper p:nth-of-type(2) {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.default-content-wrapper p.button-container {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.default-content-wrapper p.button-container a {
+    margin-top: 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #3B3B3B;
+    background-color: unset;
+    padding-left: 0;
+}
+
+.section .columns.common-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.section .columns.common-cards div:nth-of-type(1) {
+    position: relative;
+}
+
+.section .columns.common-cards div:nth-of-type(1) div:nth-of-type(2) {
+    position: absolute;
+}
